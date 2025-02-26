@@ -9,16 +9,16 @@ const AddTodo = ({dispatch}) => {
      setInput("")
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="mx-4">
       <input
-        className="border border-black"
+        className="border border-black px-4 "
         type="text"
         name=""
         id=""
         onChange={(e) => setInput(e.target.value)}
         value={input}    
       />
-      <button type="submit" className="bg-black px-4 text-white ml-2">Add</button>
+      <button type="submit" className="bg-black px-4 text-white ml-2 rounded-full py-1 text-xs font-medium">Add</button>
     </form>
   );
 };

@@ -9,7 +9,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   
   return (
-    <div>
+    <div className="min-h-screen flex flex-col justify-center items-start ">
       <Header />
       <AddTodo dispatch={dispatch}/>
       <TodoList state={state} dispatch={dispatch}/>
